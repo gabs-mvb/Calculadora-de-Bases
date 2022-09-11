@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Base</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="conversorBase.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="logo">
+        <img src="img/calculator.png" alt="Logo Dev Finance" width="100px" />
+      </h1>
+      <h1 id="logo-texto">Calculadora de Bases</h1>
+    </header>
+
+    <main class="container">
+      <section id="balance">
+        <div class="cards green">
+          <h3>
+            <span>Digite o Numéro em Decimal: </span>
+            <input type="number" id="numeroDecimal">
+           
+          </h3>
+          
+          <h3 class="resultado-conta"></h3>
+        </div>
+        <div class="cards">
+          <h3>
+            <span>Saída em binário</span>
+          </h3>
+          <p>Resultado:</p>
+          <h3 id="resultadoBinario"></h3>
+        </div>
+        <div class="cards">
+          <h3>
+            <span>Saída em Octal</span>
+          </h3>
+          <p>Resultado:</p>
+          <h3 id="resultadoOctal"></h3>
+        </div>
+        <div class="cards">
+          <h3>
+            <span>Saída em Hexadecimal</span>
+          </h3>
+          <p>Resultado:</p>
+          <h3 id="resultadoHexadecimal"></h3>
+        </div>
+        <button class="button up" onclick="realizarCalculo()">Realizar Cálculo</button>
+      </section>
+    </main>
+
+  </body>
+  <script src="conversorBase.js"></script>
+</html>
+
