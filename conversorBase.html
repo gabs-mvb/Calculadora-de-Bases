@@ -22,34 +22,34 @@
         <div class="cards green">
           <h3>
             <span>Digite o Numéro em Decimal: </span>
-            <input type="number" id="numeroDecimal">
+            <input type="number" id="numeroDecimal" max="999999">
            
           </h3>
           
           <h3 class="resultado-conta"></h3>
         </div>
-        <div class="cards">
+        <div class="cards binario">
           <h3>
             <span>Saída em binário</span>
           </h3>
           <p>Resultado:</p>
           <h3 id="resultadoBinario"></h3>
         </div>
-        <div class="cards">
+        <div class="cards octal">
           <h3>
             <span>Saída em Octal</span>
           </h3>
           <p>Resultado:</p>
           <h3 id="resultadoOctal"></h3>
         </div>
-        <div class="cards">
+        <div class="cards hexa">
           <h3>
             <span>Saída em Hexadecimal</span>
           </h3>
           <p>Resultado:</p>
           <h3 id="resultadoHexadecimal"></h3>
         </div>
-        <button class="button up" onclick="realizarCalculo()">Realizar Cálculo</button>
+        <input type="button" id="btnSubmit" onmouseout="validacaoValor()" class="button up" onclick="realizarCalculo()" value="Realizar Cálculo">
       </section>
     </main>
 

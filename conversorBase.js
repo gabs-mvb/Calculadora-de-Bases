@@ -1,3 +1,15 @@
+function validacaoValor() {
+  var valorInput = Number(numeroDecimal.value);
+
+  //valida conteudo do input
+  if (valorInput > 9999999) {
+    btnSubmit.style.display = "none";
+  } if (valorInput < 9999999) {
+    btnSubmit.style.display = "block";
+  }
+}
+
+
 function realizarCalculo() {
   var valorDecimal = Number(numeroDecimal.value);
 
