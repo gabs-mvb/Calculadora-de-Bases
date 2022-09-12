@@ -27,7 +27,6 @@ header {
   background: #1d2440;
   padding: 2rem 0 10rem;
   text-align: center;
-
 }
 
 header #logo,
@@ -136,30 +135,13 @@ input {
 
   #balance {
     display: grid;
-    max-width: 57rem;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
   .green {
     grid-column: 1 / 4;
-  
   }
   .button {
     grid-column: 2;
-  }
-  .binario{
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-  .octal{
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-  .hexa{
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-  .cards{
-    flex-wrap: wrap;
   }
 }
