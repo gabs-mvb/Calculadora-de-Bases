@@ -3,9 +3,10 @@ function validacaoValor() {
 
   //valida conteudo do input
   if (valorInput > 9999999) {
-    btnSubmit.style.display = "none";
-  } if (valorInput < 9999999) {
-    btnSubmit.style.display = "block";
+    btnSubmit.disabled = true;
+  } 
+  if (valorInput < 9999999) {
+    btnSubmit.disabled = false;
   }
 }
 

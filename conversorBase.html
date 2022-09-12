@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="conversorBase.css" />
   </head>
 
-  <body>
+  <body onmousemove="validacaoValor()">
     <header>
       <h1 id="logo">
         <img src="img/calculator.png" alt="Logo Dev Finance" width="100px" />
@@ -17,9 +17,9 @@
       <h1 id="logo-texto">Calculadora de Bases</h1>
     </header>
 
-    <main class="container">
-      <section id="balance">
-        <div class="cards green" onmouseout="validacaoValor()">
+    <main class="container" >
+      <section id="balance" >
+        <div class="cards green">
           <h3>
             <span>Digite o Numéro em Decimal: </span>
             <input type="number" id="numeroDecimal" max="999999">
@@ -49,7 +49,7 @@
           <p>Resultado:</p>
           <h3 id="resultadoHexadecimal"></h3>
         </div>
-        <input type="button" id="btnSubmit"  class="button up" onclick="realizarCalculo()" value="Realizar Cálculo">
+        <input onmouseover="validacaoValor()" type="button" id="btnSubmit" onmouseout="validacaoValor()" class="button up" onclick="realizarCalculo()" value="Realizar Cálculo">
       </section>
     </main>
 
